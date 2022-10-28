@@ -2,8 +2,8 @@ import axios from 'axios';
 const url = import.meta.env.VITE_APP_API_URL;
 class ContactService {
     constructor() {
-    this.baseUrl = `${url}/api/contacts`;
-    this.api = axios.create({
+        this.baseUrl = `${url}/api/contacts`;
+        this.api = axios.create({
             headers: {
                 'Content-Type': 'application/json',
                 Accept: 'application/json',
